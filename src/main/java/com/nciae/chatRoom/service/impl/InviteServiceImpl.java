@@ -6,6 +6,7 @@ import com.nciae.chatRoom.mapper.InviteMapper;
 import com.nciae.chatRoom.service.InviteService;
 import com.nciae.chatRoom.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.UUID;
@@ -17,6 +18,8 @@ import java.util.UUID;
  * 邀请服务模块，目前包括接受邀请和创建邀请两个功能
  *
  */
+
+@Service
 public class InviteServiceImpl implements InviteService {
     private InviteMapper inviteMapper;
     private UserService userServiceImpl;
